@@ -3,7 +3,7 @@ from flask_cors import CORS
 
 app = Flask(__name__)
 CORS(app, resources={r"/*": {"origins": "*"}})
-@app.route('/api/search')
+@app.route('https://equipment-search-tool.onrender.com')
 def search_equipment():
     query = request.args.get('query')
     specs = {
